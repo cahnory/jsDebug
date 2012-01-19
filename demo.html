@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jsDebug</title>
+	<style>
+		div {	
+			margin: 0 auto;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>jsDebug</h1>
+		<p>
+			This short test page shows all kind of error detected. There are just 3 for the moment:
+		</p>
+		<dl>
+			<dt>console.log usage</dt>
+			<dd>jsDebug: Using console could stop your script in IE</dd>
+			<dt>Use of undefined $ var</dt>
+			<dd>jsDebug: There is no framework attached to '$'</dd>
+			<dt>Use of undefined jQuery var</dt>
+			<dd>jsDebug: jQuery is not loaded</dd>
+		</dl>
+		<p>
+			It's just a draft, it's not very useful as if you think to use this script you may find these errors by yourself. I just made it in order to have a place to put all the little mistakes I encounter while coding. Maybe someday it will be more interesting…
+		</p>
+		<p>
+			IE users, you should have seen confirm boxes with each errors. For the others, take a look to the console.
+		</p>
+	</div>
+	<script src="src/jsDebug.js"></script>
+	<script>
+		console.log('foo');		//jsDebug: Using console could stop your script in IE
+		$('.foo');				//jsDebug: There is no framework attached to '$'
+		jQuery('.foo');			//jsDebug: jQuery is not loaded
+	</script>
+</body>
+</html>

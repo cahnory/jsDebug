@@ -1,0 +1,8 @@
+#What ?
+A simple tool to find common issues in JS script. It's a draft for the moment.
+
+#How ?
+By including jsDebug before any other JS script.
+
+#Why ?
+How many times you asked yourself "why it's not working in IE" and remembered that you left some console.log calls in your script ?
